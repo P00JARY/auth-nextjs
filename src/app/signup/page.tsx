@@ -21,11 +21,13 @@ export default function page() {
     try {
       setLoading(true);
       const response = await axios.post("/api/users/signup", user);
-      console.log("Success", response.data);
-      router.push("/login");
-    } catch (err: any) {
-      console.log("onSign", err);
+      console.log("hello", response);
 
+      console.log("Success", response.data);
+      router.push("/profile");
+    } catch (err: any) {
+      setLoading(false);
+      console.log("onSign", err);
       toast.error(err.message);
     } finally {
       setLoading(false);
