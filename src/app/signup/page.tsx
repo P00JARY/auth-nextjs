@@ -87,7 +87,7 @@ export default function page() {
       </button>
       <Link href="/login">
         <div className="text-2xl  font-mono  hover:text-blue-500">
-          already have an account
+          already have an account !
         </div>
       </Link>
       <Toaster position="top-center" />

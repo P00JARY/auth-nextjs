@@ -36,6 +36,7 @@ export async function POST(request: NextRequest) {
 
     //sending email
     // await sendEmail({ email, emailType: "VERIFY", userId: savedUser._id });
+    // todo: sendEmail part has error
 
     return NextResponse.json({
       message: "user created successfully",
